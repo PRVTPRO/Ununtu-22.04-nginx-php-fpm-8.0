@@ -11,22 +11,22 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 
 ### Dockerfile ENV 
 
-ENV nginx_vhost /etc/nginx/sites-available/default
-ENV php_conf /etc/php/8.0/fpm/php.ini
-ENV nginx_conf /etc/nginx/nginx.conf
-ENV supervisor_conf /etc/supervisor/supervisord.conf
+    ENV nginx_vhost /etc/nginx/sites-available/default
+    ENV php_conf /etc/php/8.0/fpm/php.ini
+    ENV nginx_conf /etc/nginx/nginx.conf
+    ENV supervisor_conf /etc/supervisor/supervisord.conf
 
 ### Volumes
-VOLUME [
-"/etc/nginx/sites-enabled",
-"/etc/nginx/certs",
-"/etc/nginx/conf.d",
-"/var/log/nginx",
-"/var/www/html"
-]
+    VOLUME [
+    "/etc/nginx/sites-enabled",
+    "/etc/nginx/certs",
+    "/etc/nginx/conf.d",
+    "/var/log/nginx",
+    "/var/www/html"
+    ]
 
 ### Set up PHP repository
-RUN add-apt-repository ppa:ondrej/php 
+    RUN add-apt-repository ppa:ondrej/php 
 
 ### apt-get
                   git \

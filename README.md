@@ -1,4 +1,4 @@
-# Ununtu-22.04-nginx-php-fpm-8.0
+# Ubuntu 22.04 LTS + Nginx + PHP8.0-FPM
 Pre-Image Ununtu 22.04+nginx+php-fpm 8.0
 ## Ubuntu Dockerfile
 
@@ -9,6 +9,49 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 
 * [ubuntu:22.04](https://registry.hub.docker.com/u/library/ubuntu/)
 
+### Dockerfile ENV 
+
+ENV nginx_vhost /etc/nginx/sites-available/default
+ENV php_conf /etc/php/8.0/fpm/php.ini
+ENV nginx_conf /etc/nginx/nginx.conf
+ENV supervisor_conf /etc/supervisor/supervisord.conf
+
+### Volumes
+VOLUME [
+"/etc/nginx/sites-enabled",
+"/etc/nginx/certs",
+"/etc/nginx/conf.d",
+"/var/log/nginx",
+"/var/www/html"
+]
+
+### Set up PHP repository
+RUN add-apt-repository ppa:ondrej/php 
+
+### apt-get
+                  git \
+                  libldap-common \
+                  openssl \
+                  php${PHP_BASE}-memcached \
+                  tar \
+                  wget \
+                  zlib1g \
+                  curl \
+                  software-properties-common \
+                  ### Install required dependencies
+                  gnupg2 \
+                  ca-certificates \
+                  lsb-release \
+                  apt-transport-https \
+                  supervisor 
+                  nginx \
+                  php8.0 \
+                  php8.0-fpm \
+                  php8.0-cli \
+                  php8.0-curl \
+                  php8.0-mysql \
+                  php8.0-mbstring \
+                  php8.0-xml 
 
 ### Installation
 

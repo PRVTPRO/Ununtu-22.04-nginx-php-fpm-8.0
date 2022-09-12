@@ -65,6 +65,11 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 
 
    (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/ubuntu22.04.php-fpm.8.0" github.com/dockerfile/ubuntu`)
+   
+###RUN
+   
+   docker run -d -v /home/web:/var/www/html -p 8080:80 --name NAME ubuntu.nginx-php8.0:latest
+
 
 
 ### Usage

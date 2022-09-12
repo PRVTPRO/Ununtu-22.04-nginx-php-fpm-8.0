@@ -68,7 +68,7 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
    
 ###RUN
    
-   docker run -d -v /home/web:/var/www/html -p 8080:80 --name NAME ubuntu.nginx-php8.0:latest
+    docker run -d -v /home/web:/var/www/html -p 8080:80 --name NAME ubuntu.nginx-php8.0:latest
 
 
 

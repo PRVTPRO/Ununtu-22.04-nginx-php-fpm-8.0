@@ -68,8 +68,7 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
    
    or use
    
-   [Docker Hub Registry]([https://registry.hub.docker.com/]](https://hub.docker.com/repository/docker/prvtpro/ubuntu22.04-php8.0-fpm])
-
+[Docker Hub Registry](https://hub.docker.com/repository/docker/prvtpro/ubuntu22.04-php8.0-fpm) 
    
 ### Usage (load U php in mounted directory)
    

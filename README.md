@@ -66,7 +66,6 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 
    (alternatively, you can build an image from Dockerfile: docker build -t ubuntu.nginx-php8.0 .
    
-   or use
    
 [Docker Hub Registry](https://hub.docker.com/repository/docker/prvtpro/ubuntu22.04-php8.0-fpm) 
    
